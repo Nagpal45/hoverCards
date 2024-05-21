@@ -128,13 +128,13 @@
     animation: expandFromBottomLeft 0.5s forwards;
   }
   
-  .imgContainer:not(:hover) .descContainer {
-    display: flex;
+  .imgContainer:not(:hover) .descContainer p{
+    display: none;
     animation: contractToBottomLeft 0.5s backwards;
   }
-
-  .imgContainer:not(:hover) p{
-    display: none;
+  .imgContainer:not(:hover) .descContainer{
+    display: flex;
+    animation: contractToBottomLeft 0.5s backwards;
   }
   
   .descContainer p:first-child {
